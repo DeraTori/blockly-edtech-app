@@ -401,7 +401,7 @@
                 "contents": [
                     {
                         "kind": "category",
-                        "name": "🚀 開始",
+                        "name": "🚀 はじめ",
                         "colour": 30,
                         "contents": [
                             {"kind": "block", "type": "start"}
@@ -409,7 +409,7 @@
                     },
                     {
                         "kind": "category",
-                        "name": "🏃‍♂️ 動作",
+                        "name": "🏃‍♂️ うごき",
                         "colour": 120,
                         "contents": [
                             {"kind": "block", "type": "move_forward"},
@@ -433,7 +433,7 @@
                     },
                     {
                         "kind": "category",
-                        "name": "🔄 繰り返し",
+                        "name": "🔄 くりかえす",
                         "colour": 20,
                         "contents": [
                             {"kind": "block", "type": "controls_repeat_ext"},
@@ -443,7 +443,7 @@
                     },
                     {
                         "kind": "category",
-                        "name": "🤔 判断",
+                        "name": "🤔 かんがえる",
                         "colour": 210,
                         "contents": [
                             {"kind": "block", "type": "controls_if"},
@@ -455,7 +455,7 @@
                     },
                     {
                         "kind": "category",
-                        "name": "💬 表現",
+                        "name": "💬 ひょうげん",
                         "colour": 160,
                         "contents": [
                             {
@@ -478,7 +478,7 @@
                     },
                     {
                         "kind": "category",
-                        "name": "⏰ 時間",
+                        "name": "⏰ じかん",
                         "colour": 290,
                         "contents": [
                             {
@@ -499,7 +499,7 @@
                     },
                     {
                         "kind": "category",
-                        "name": "🔢 数と文字",
+                        "name": "🔢 かずともじ",
                         "colour": 230,
                         "contents": [
                             {"kind": "block", "type": "math_number"},
@@ -714,7 +714,7 @@
             }, 2000);
             
             document.getElementById('status').textContent = 
-                `レベル${level}クリア！次のレベルに挑戦しよう！`;
+                `レベル${level}クリア！次のレベルにチャレンジしよう！`;
         }
         
         // プログラム実行
@@ -731,11 +731,11 @@
                 await eval(`(async function() { ${code} })()`);
                 if (robotX !== goalX || robotY !== goalY) {
                     document.getElementById('status').textContent = 
-                        'ゴールに到達できませんでした。プログラムを見直してみよう！';
+                        'ゴールにつきまできませんでした。プログラムをみなおしてみよう！';
                 }
             } catch (error) {
                 document.getElementById('status').textContent = 
-                    'エラーが発生しました：' + error.message;
+                    'エラーがはっせいしました：' + error.message;
             }
             
             isRunning = false;
@@ -750,7 +750,7 @@
             updateRobotPosition();
             updateRobotRotation();
             document.getElementById('status').textContent = 
-                'ブロックをドラッグして組み合わせ、ロボットをゴールまで導こう！';
+                'ブロックをドラッグしてくみあわせ、ロボットをゴールまでみちびこう！';
         }
         
         // 次のレベル
